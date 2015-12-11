@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--- 6F73636172 -->
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="178.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logincompleto.ControladorCentral">
+   <children>
+      <TextField fx:id="usuario" layoutX="14.0" layoutY="39.0" />
+      <PasswordField fx:id="contrasena" layoutX="14.0" layoutY="100.0" />
+      <Button fx:id="isesion" layoutX="71.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleButtonAction" onMouseDragged="#moverSobreBoton" onMouseEntered="#moverSobreBoton" style="-fx-background-color: #5BC0DE;" text="Iniciar Sesión" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ColorAdjust />
+         </effect></Button>
+      <Button layoutX="16.0" layoutY="137.0" mnemonicParsing="false" onAction="#salir" style="-fx-background-color: D9534F;" text="Salir" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="14.0" layoutY="14.0" text="Usuario:" />
+      <Label layoutX="14.0" layoutY="76.0" text="Contraseña:" />
+   </children>
+</AnchorPane>
